@@ -6,7 +6,7 @@
 
 KeyLogger* KeyLogger::instance_ = nullptr;
 QKeySequence KeyLogger::hotkey_;
-unsigned int KeyLogger::duration_limit_;
+unsigned int KeyLogger::duration_limit_ = 3000;
 
 std::unordered_map<int, std::string> KeyLogger::key_map_ = {
     {VK_BACK, "Backspace"},
